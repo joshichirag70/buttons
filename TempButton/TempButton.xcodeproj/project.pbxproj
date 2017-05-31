@@ -14,6 +14,7 @@
 		F806F0B21EDE723C0044EC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F806F0B01EDE723C0044EC00 /* LaunchScreen.storyboard */; };
 		F806F0BD1EDE723D0044EC00 /* TempButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806F0BC1EDE723D0044EC00 /* TempButtonTests.swift */; };
 		F806F0C81EDE723D0044EC00 /* TempButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806F0C71EDE723D0044EC00 /* TempButtonUITests.swift */; };
+		F89FF6061EDEC23C0052109E /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89FF6051EDEC23C0052109E /* TextFieldVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F806F0C31EDE723D0044EC00 /* TempButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F806F0C71EDE723D0044EC00 /* TempButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempButtonUITests.swift; sourceTree = "<group>"; };
 		F806F0C91EDE723D0044EC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89FF6051EDEC23C0052109E /* TextFieldVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				F806F0A71EDE723C0044EC00 /* AppDelegate.swift */,
 				F806F0A91EDE723C0044EC00 /* ViewController.swift */,
+				F89FF6051EDEC23C0052109E /* TextFieldVC.swift */,
 				F806F0AB1EDE723C0044EC00 /* Main.storyboard */,
 				F806F0AE1EDE723C0044EC00 /* Assets.xcassets */,
 				F806F0B01EDE723C0044EC00 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F806F0AA1EDE723C0044EC00 /* ViewController.swift in Sources */,
+				F89FF6061EDEC23C0052109E /* TextFieldVC.swift in Sources */,
 				F806F0A81EDE723C0044EC00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +516,7 @@
 				F806F0CE1EDE723D0044EC00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F806F0CF1EDE723D0044EC00 /* Build configuration list for PBXNativeTarget "TempButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				F806F0D11EDE723D0044EC00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F806F0D21EDE723D0044EC00 /* Build configuration list for PBXNativeTarget "TempButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				F806F0D41EDE723D0044EC00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var arrayOfTemp = [Int]()
     var isSelected = [Bool]()
     var intRandomlyIndex = 2
-    var intCountButtons = 10
+    var intCountButtons = 0
     
     @IBOutlet weak var IBclvTempButtons: UICollectionView!
     
@@ -54,12 +54,18 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
     
     func setLoop(index : Int = 0) {
         if arrayOfTemp.count > 0 {
-            let randomIndex = Int(arc4random_uniform(UInt32(isSelected.count)))
+           let randomIndex = Int(arc4random_uniform(UInt32(isSelected.count)))
             if self.isSelected[randomIndex] == false {
             self.isSelected[randomIndex] = true
             self.IBclvTempButtons.reloadData()
             } else {
-                self.setLoop(index: index)
+                for i in 0..<isSelected.count {
+                    if isSelected[i] == true {
+                    } else {
+                        self.setLoop(index: index)
+                        break
+                    }
+                }
             }
         }
     }
@@ -74,6 +80,7 @@ extension ViewController {
         }
         let randomIndex = Int(arc4random_uniform(UInt32(isSelected.count)))
         self.isSelected[randomIndex] = true
+        self.arrayOfTemp.remove(at: randomIndex)
         self.IBclvTempButtons.reloadData()
     }
 }
